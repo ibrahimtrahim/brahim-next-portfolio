@@ -10,15 +10,15 @@ const Skills = () => {
       <TitleSection title='My Skills' />
       <div className='mt-12 flex flex-wrap justify-around items-center gap-8'>
         <div className='flex flex-col items-center'>
-          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12'>UI/UX Design</h2>
+          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12 dark:text-white'>UI/UX Design</h2>
           <CercleSkills icons={uiUxIcons} />
         </div>
         <div className='flex flex-col items-center'>
-          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12'>Web Development</h2>
+          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12 dark:text-white'>Web Development</h2>
           <CercleSkills  icons={webDevIcons} />
         </div>
         <div className='flex flex-col items-center'>
-          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12'>Tools & Platforms</h2>
+          <h2 className='text-center bold-16 lg:bold-18 mt-8 mb-12 dark:text-white'>Tools & Platforms</h2>
           <CercleSkills icons={toolsIcons} />
         </div>
       </div>

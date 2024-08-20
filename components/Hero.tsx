@@ -8,12 +8,12 @@ import Typingwrite from './Typingwrite'
 const Hero = () => {
   return (
     <section className='flex flex-col justify-center items-center py-16'>
-      <Image src='/pic-1.png' alt='brahim trahim' width={150} height={150} className='rounded-full border-4 border-gray-400'/>
-      <p className='regular-18 mt-10'>
+      <Image src='/pic-1.png' alt='brahim trahim' width={150} height={150} className='rounded-full border-4 border-gray-400 dark:border-white'/>
+      <p className='regular-18 mt-10 dark:text-white'>
         Hello! 👋 I’m:
       </p>
-      <h1 className='mt-4 text-center bold-40 lg:bold-64'>Brahim Trahim</h1>
-      <span className='mt-4 text-green-50 regular-18'>
+      <h1 className='mt-4 text-center bold-40 lg:bold-64 dark:text-white'>Brahim Trahim</h1>
+      <span className='mt-4 text-green-50  regular-18'>
         <Typingwrite/>
       </span>
       <div className='flex flex-col gap-5 mt-4'>

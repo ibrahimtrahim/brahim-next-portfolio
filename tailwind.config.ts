@@ -5,6 +5,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -29,6 +30,9 @@ module.exports = {
         yellow: {
           50: '#FEC601',
         },
+        black: {
+          50: '#222222',
+        }
       },
       backgroundImage: {
         'bg-img-1': "url('/img-1.png')",

@@ -13,15 +13,15 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, img, link, linkText, languages }) => {
   return (
-    <div className="group relative overflow-hidden border-2 border-black/50 dark:border-white/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]">
-      <div className='group-hover bg-black/70 z-40 w-full h-full absolute transition-all duration-300'></div>
+    <div className="group relative overflow-hidden border-2 border-black-50/50 dark:border-white/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]">
+      <div className='group-hover bg-black-50/70 z-40 w-full h-full absolute transition-all duration-300'></div>
         <img className='group-hover:scale-125 transition-all duration-500 cursor-pointer' 
           src={img}
           alt={title}
         />
         <div className='absolute -bottom-full left-4 group-hover:bottom-4 transition-all duration-500 z-50'>
           <h5 className="mb-4 text-l text-white bold-20 tracking-tight dark:text-white">{title}</h5>
-          <p className="mb-4 font-normal text-white dark:text-gray-400">{description}</p>
+          <p className="mb-4 font-normal text-white dark:text-white">{description}</p>
           <div className="flex items-center mb-4">
             {languages && languages.map((language, index) => (
               <div key={index} className="flex items-center mr-2">

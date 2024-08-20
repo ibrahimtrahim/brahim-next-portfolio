@@ -2,6 +2,7 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
+import ThemeToggle from "./ThemeToggle"
 
 const Navbar = () => {
   return (
@@ -12,18 +13,21 @@ const Navbar = () => {
 
       <ul className="hidden h-full gap-12 lg:flex">
         {NAV_LINKS.map((link) => (
-          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:text-green-50 hover:font-bold">
+          <Link href={link.href} key={link.key} className="regular-16 text-gray-50 dark:text-white flexCenter cursor-pointer pb-1.5 transition-all hover:text-green-50 dark:hover:text-green-50 hover:font-bold">
             {link.label}
           </Link>
         ))}
       </ul>
 
-      <div className="lg:flexCenter hidden">
+      <div className="lg:flexBetween">
+      <ThemeToggle />
+      <div className="lg:flexBetween hidden">
         <Button
           type="button"
           title="Contact Me"
           variant="btn_green"
-        />
+          />
+      </div>
       </div>
 
       <Image 
