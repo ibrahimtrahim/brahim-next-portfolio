@@ -5,7 +5,7 @@ import React from 'react'
 
 const Portfolio = () => {
   return (
-    <section className='max-container padding-containe py-16'>
+    <section className='max-container padding-containe py-16' id='portfolio'>
       <TitleSection title='My Portfolio' />
       <div className='flex justify-center flex-wrap gap-9 mt-20'>
         {projects.map((project) => (

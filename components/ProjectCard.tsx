@@ -1,6 +1,7 @@
-import Image from 'next/image';
+"use client"
 import Link from 'next/link';
 import React from 'react'
+import { motion } from 'framer-motion'
 
 interface ProjectCardProps {
   title: string;
@@ -13,7 +14,12 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, img, link, linkText, languages }) => {
   return (
-    <div className="group relative overflow-hidden border-2 border-black-50/50 dark:border-white/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]">
+    <motion.div 
+      className="group relative overflow-hidden border-2 border-black-50/50 dark:border-white/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]"
+      initial={{opacity: 0}}
+      whileInView={{opacity: 1}}
+      transition={{duration: 1}}
+    >
       <div className='group-hover bg-black-50/70 z-40 w-full h-full absolute transition-all duration-300'></div>
         <img className='group-hover:scale-125 transition-all duration-500 cursor-pointer' 
           src={img}
@@ -43,7 +49,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, img, link
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

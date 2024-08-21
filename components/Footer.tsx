@@ -1,81 +1,33 @@
-import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from '@/constants'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-10 mt-12">
-      <div className="padding-container max-container flex w-full flex-col gap-14">
-        <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-          <Link href="/" className="mb-10">
-            <Image src="/hilink-logo.png" alt="logo" width={74} height={29}/>
-          </Link>
-
-          <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title}>
-                <ul className="regular-14 flex flex-col gap-4 text-gray-30 ">
-                  {columns.links.map((link) => (
-                    <Link href="/" key={link}>
-                      {link}
-                    </Link>
-                  ))}
-                </ul>
-              </FooterColumn>
-            ))}
-
-            <div className="flex flex-col gap-5">
-              <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
-                  <Link
-                    href="/"
-                    key={link.label}
-                    className="flex gap-4 md:flex-col lg:flex-row"
-                  >
-                    <p className="whitespace-nowrap dark:text-white">
-                      {link.label}:
-                    </p>
-                    <p className="medium-14 whitespace-nowrap text-blue-70 dark:text-gray-30">
-                      {link.value}
-                    </p>
-                  </Link>
-                ))}
-              </FooterColumn>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-14 flex gap-4 text-gray-30">
-                  {SOCIALS.links.map((link) => (
-                    <Link href="/" key={link}>
-                      <Image src={link} alt="logo" width={24} height={24} />
-                    </Link>
-                  ))}
-                </ul>
-              </FooterColumn>
-            </div>
-          </div>
+    <footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            <Link href="/" className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">BRAHIM</span>
+            </Link>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <Link href="#about" className="hover:underline me-4 md:me-6">About</Link>
+                </li>
+                <li>
+                    <Link href="#skills" className="hover:underline me-4 md:me-6">Skills</Link>
+                </li>
+                <li>
+                    <Link href="#portfolio" className="hover:underline me-4 md:me-6">Portfolio</Link>
+                </li>
+                <li>
+                    <Link href="#contact" className="hover:underline">Contact</Link>
+                </li>
+            </ul>
         </div>
-
-        <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">2024 BRAHIM | All rights reserved</p>
-      </div>
-    </footer>
-  )
-}
-
-type FooterColumnProps = {
-  title: string;
-  children: React.ReactNode;
-}
-
-const FooterColumn = ({ title, children }: FooterColumnProps) => {
-  return (
-    <div className="flex flex-col gap-5">
-      <h4 className="bold-18 whitespace-nowrap dark:text-white">{title}</h4>
-      {children}
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 BRAHIM. All Rights Reserved.</span>
     </div>
+</footer>
   )
 }
 

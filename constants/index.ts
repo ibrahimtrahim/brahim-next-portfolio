@@ -1,18 +1,32 @@
 // NAVIGATION
 export const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'about', label: 'About' },
-    { href: '/', key: 'Skills', label: 'Skills' },
-    { href: '/', key: 'portfolio ', label: 'Portfolio ' },
+    { href: '#home', key: 'home', label: 'Home' },
+    { href: '#about', key: 'about', label: 'About' },
+    { href: '#skills', key: 'Skills', label: 'Skills' },
+    { href: '#portfolio', key: 'portfolio ', label: 'Portfolio ' },
+    { href: '#contact', key: 'contact ', label: 'Contact ' },
+
   ];
 
   export const SOCIALS = {
     title: 'Social',
     links: [
-      '/facebook.svg',
-      '/instagram.svg',
-      '/github.svg',
-      '/linkedin.svg',
+      {
+        icon: '/facebook.svg',
+        url: 'https://web.facebook.com/trahimbrahim', // Replace with your Facebook URL
+      },
+      {
+        icon: '/instagram.svg',
+        url: 'https://www.instagram.com/trahimbrahim/', // Replace with your Instagram URL
+      },
+      {
+        icon: '/github.svg',
+        url: 'https://github.com/ibrahimtrahim', // Replace with your GitHub URL
+      },
+      {
+        icon: '/linkedin.svg',
+        url: 'https://www.linkedin.com/in/yourprofile', // Replace with your LinkedIn URL
+      },
     ],
   };
 
