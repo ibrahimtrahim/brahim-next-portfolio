@@ -33,29 +33,30 @@ const Contact = () => {
               />
           </div>
         </div>
-        <div className="">
+        <form action="https://formspree.io/f/xldrpgkl" method='POST'>
           <div>
-            <span className="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+            <label htmlFor="full-name" className="uppercase text-sm text-gray-600 font-bold">Full Name</label>
             <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" placeholder="" />
+              type="text" id="full-name" name="full-name" placeholder="" required />
           </div>
           <div className="mt-8">
-            <span className="uppercase text-sm text-gray-600 font-bold">Email</span>
+            <label htmlFor="email" className="uppercase text-sm text-gray-600 font-bold">Email</label>
             <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              type="text" />
+               id="email" type="email" name="email" required />
           </div>
           <div className="mt-8">
-            <span className="uppercase text-sm text-gray-600 font-bold">Message</span>
-            <textarea
+            <label htmlFor="message" className="uppercase text-sm text-gray-600 font-bold">Message</label>
+            <textarea id="message" name="message"
               className="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
           </div>
           <div className="mt-8">
             <button
+              type="submit"
               className="uppercase text-sm font-bold tracking-wide bg-green-50 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
               Send Message
             </button>
           </div>
-        </div>
+        </form>
       </motion.div>
 
     </section>

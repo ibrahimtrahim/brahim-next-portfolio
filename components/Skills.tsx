@@ -9,8 +9,7 @@ import { webDevIcons, uiUxIcons, toolsIcons } from '@/constants'
 
 const Skills = () => {
   return (
-    <section 
-      className='max-container padding-containe py-16' id='skills'>
+    <section className='max-container padding-containe py-16' id='skills'>
       <TitleSection title='My Skills' />
       <motion.div className='mt-12 flex flex-wrap justify-around items-center gap-8' initial={{opacity: 0}}
       whileInView={{opacity: 1}}

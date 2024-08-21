@@ -104,6 +104,19 @@ export const NAV_LINKS = [
   ];
 
   export const projects = [
+    {
+      id: '0',
+			title: "MovieHub",
+			description:
+				"Dynamic movie app crafted with React.js, Tailwind CSS, and API integration.",
+			linkText: "https://github.com/ibrahimtrahim/movieapp",
+			img: "/project01.png",
+			link: "https://ibrahimtrahim.github.io/movieapp/",
+			languages: [
+        { name: "REACT JS", logo: "/react.png" },
+        { name: "TAILWIND CSS", logo: "/tailwind.png" },
+      ]
+		},
 		{
       id: '1',
 			title: "Hair Studio",
@@ -115,7 +128,7 @@ export const NAV_LINKS = [
 			languages: [
         { name: "HTML", logo: "/html.png" },
         { name: "CSS", logo: "/css.png" },
-				{ name: "JavaScript", logo: "/javas.png" },
+				{ name: "JavaScript", logo: "/js.png" },
       ]
 		},
 
@@ -144,7 +157,7 @@ export const NAV_LINKS = [
 			link: "https://ibrahimtrahim.github.io/countries-react-app/",
 			languages: [
                 { name: "REACT JS", logo: "/react.png" },
-                { name: "TAILWIND CSS", logo: "/tailwindcss.png" },
+                { name: "TAILWIND CSS", logo: "/tailwind.png" },
             ]
 		},
 
@@ -158,26 +171,12 @@ export const NAV_LINKS = [
 			link: "https://idokan.vercel.app/",
 			languages: [
                 { name: "REACT JS", logo: "/react.png" },
-                { name: "TAILWIND CSS", logo: "/tailwindcss.png" },
+                { name: "TAILWIND CSS", logo: "/tailwind.png" },
             ]
 		},
 
 		{
       id: '5',
-			title: "Room",
-			description:
-				"Responsive landing page crafted using HTML, SCSS, and JS.",
-			linkText: "https://github.com/ibrahimtrahim/homepage",
-			img: "/project06.png",
-			link: "https://ibrahimtrahim.github.io/homepage/",
-			languages: [
-                { name: "HTML", logo: "/html.png" },
-                { name: "SCSS", logo: "/sass.png" },
-				{ name: "JavaScript", logo: "/js.png" },
-            ]
-		},
-    {
-      id: '6',
 			title: "Room",
 			description:
 				"Responsive landing page crafted using HTML, SCSS, and JS.",
