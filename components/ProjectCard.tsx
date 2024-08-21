@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image';
 
 interface ProjectCardProps {
   title: string;
@@ -21,17 +22,20 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, img, link
       transition={{duration: 1}}
     >
       <div className='group-hover bg-black-50/70 z-40 w-full h-full absolute transition-all duration-300'></div>
-        <img className='group-hover:scale-125 transition-all duration-500 cursor-pointer' 
+        <Image
           src={img}
           alt={title}
-        />
+          className='group-hover:scale-125 transition-all duration-500 cursor-pointer'
+          width={500}
+          height={500}
+         />
         <div className='absolute -bottom-full left-4 group-hover:bottom-4 transition-all duration-500 z-50'>
           <h5 className="mb-4 text-l text-white bold-20 tracking-tight dark:text-white">{title}</h5>
           <p className="mb-4 font-normal text-white dark:text-white">{description}</p>
           <div className="flex items-center mb-4">
             {languages && languages.map((language, index) => (
               <div key={index} className="flex items-center mr-2">
-                <img src={language.logo} alt={language.name} className="h-6 mr-1" />
+                <Image src={language.logo} alt={language.name} className="h-6 mr-1" width={25} height={32} />
               </div>
             ))}
         </div>

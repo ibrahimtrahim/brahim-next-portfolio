@@ -7,7 +7,7 @@ import Typingwrite from './Typingwrite'
 
 const Hero = () => {
   return (
-    <section className='flex flex-col justify-center items-center py-16' id='home'>
+    <section className='flex flex-col justify-center items-center py-16 mt-20' id='home'>
       <Image src='/pic-1.png' alt='brahim trahim' width={150} height={150} className='rounded-full border-4 border-gray-400 dark:border-white'/>
       <p className='regular-18 mt-10 dark:text-white'>
         Hello! 👋 I’m:
