@@ -31,11 +31,11 @@ To run the portfolio locally, follow these steps:
    git clone https://github.com/ibrahimtrahim/brahim-next-portfolio.git
 
 2. Navigate to the project directory:
-```bash
+    ```bash
 cd yourportfolio
 
 3. Install dependencies:
-```bash
+    ```bash
 npm run dev
 # or
 yarn dev
@@ -43,10 +43,9 @@ yarn dev
 pnpm dev
 # or
 bun dev
-```
 
 4. Start the development server:
-```bash
+    ```bash
 npm run dev
 # or
 yarn dev
