@@ -1,13 +1,20 @@
+"use client"
+
 import { SOCIALS } from '@/constants'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Button from './Button'
 import Typingwrite from './Typingwrite'
+import { useSectionInView } from '@/constants/hooks'
+import { useActiveSectionContext } from '@/context/active-section-context'
 
 const Hero = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+  
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   return (
-    <section className='flex flex-col justify-center items-center py-16 mt-20' id='home'>
+    <section ref={ref} className='flex flex-col justify-center items-center py-16 mt-20' id='home'>
       <Image src='/pic-1.png' alt='brahim trahim' width={150} height={150} className='rounded-full border-4 border-gray-400 dark:border-white'/>
       <p className='regular-18 mt-10 dark:text-white'>
         Hello! 👋 I’m:
@@ -30,6 +37,10 @@ const Hero = () => {
           type="button"
           title="Contact Me"
           variant="btn_green"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         />
         <Button
           type="button"

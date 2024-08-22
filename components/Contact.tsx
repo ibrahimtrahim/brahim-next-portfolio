@@ -3,11 +3,13 @@ import React from 'react'
 import TitleSection from './TitleSection'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { useSectionInView } from '@/constants/hooks'
 
 
 const Contact = () => {
+  const { ref } = useSectionInView("Contact");
   return (
-    <section className='max-container padding-containe py-16' id='contact'>
+    <section ref={ref} className='max-container padding-containe py-16' id='contact'>
       <TitleSection title='Contact Me' />
       
       <motion.div 

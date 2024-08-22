@@ -190,32 +190,3 @@ export const NAV_LINKS = [
             ]
 		},
 	];
-
-  export const FOOTER_LINKS = [
-    {
-      title: 'Learn More',
-      links: [
-        'About',
-        'Portfolio',
-        'Services',
-        'Contact Me',
-      ],
-    },
-    {
-      title: 'Learn More',
-      links: [
-        'About',
-        'Portfolio',
-        'Services',
-        'Contact Me',
-      ],
-    },
-  ];
-
-  export const FOOTER_CONTACT_INFO = {
-    title: 'Contact Us',
-    links: [
-      { label: 'Phone', value: '+212-610-760-225' },
-      { label: 'Email', value: 'trahimbrahim@gmail.com' },
-    ],
-  };

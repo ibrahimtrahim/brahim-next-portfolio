@@ -3,10 +3,12 @@
 import React from 'react'
 import TitleSection from './TitleSection'
 import { motion } from "framer-motion";
+import { useSectionInView } from '@/constants/hooks';
 
 const About = () => {
+  const { ref } = useSectionInView("About");
   return (
-    <section className='max-container padding-containe' id='about'>
+    <section ref={ref} className='max-container padding-containe' id='about'>
       <TitleSection title='About Me' />
       <motion.div className='flex items-center justify-center mx-auto max-w-[45rem] leading-8 text-center mt-20'
       initial={{opacity: 0}}
