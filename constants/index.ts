@@ -3,8 +3,8 @@ export const NAV_LINKS = [
     { href: '#home', key: 'home', label: 'Home' },
     { href: '#about', key: 'about', label: 'About' },
     { href: '#skills', key: 'Skills', label: 'Skills' },
-    { href: '#portfolio', key: 'portfolio ', label: 'Portfolio ' },
-    { href: '#contact', key: 'contact ', label: 'Contact ' },
+    { href: '#portfolio', key: 'portfolio ', label: 'Portfolio' },
+    { href: '#contact', key: 'contact ', label: 'Contact' },
 
   ];
 

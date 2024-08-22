@@ -16,7 +16,7 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, img, link, linkText, languages }) => {
   return (
     <motion.div 
-      className="group relative overflow-hidden border-2 border-black-50/50 dark:border-white/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]"
+      className="group relative overflow-hidden border-2 border-black-50/50 text-gray-700 bg-white m-2 rounded-xl sm:w-[350px] sm:min-w-[350px] sm:h-[350px] sm:min-h-[350px]"
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1}}

@@ -11,9 +11,9 @@ const Portfolio = () => {
   const { ref } = useSectionInView("Portfolio");
 
   return (
-    <section ref={ref} className='max-container padding-containe py-16' id='portfolio'>
+    <section className='max-container padding-containe py-16' id='portfolio'>
       <TitleSection title='My Portfolio' />
-      <div className='flex justify-center flex-wrap gap-9 mt-20'>
+      <div ref={ref} className='flex justify-center flex-wrap gap-9 mt-20'>
         {projects.map((project) => (
           <ProjectCard 
             key={project.id}

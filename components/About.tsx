@@ -19,9 +19,9 @@ const About = () => {
           <span className="font-medium">physics teacher</span>, I decided to switch 
           to front-end development. I enrolled in a bootcamp where I learned {" "}
           <span className="font-medium">web development</span>. and gained a strong 
-          foundation in{" "}<span className="font-medium">HTML, CSS, and JavaScript.</span>  
+          foundation in{" "}<span className="font-medium">HTML, CSS, and JavaScript.</span>   
           My core set includes{" "}<span className="font-medium">React and Next.js</span>.
-          I am also familiar with TypeScript and wordpress. My background as a teacher has improved my ability 
+          I am also familiar with <span className="font-medium">TypeScript</span> and <span className="font-medium">wordpress</span>. My background as a teacher has improved my ability 
           to clearly communicate complex ideas, work effectively in a team, and solve problems 
           creatively. I always like to learn <span className="underline">new technologies</span> and expand my skills. 
           I am currently looking for a{" "}
