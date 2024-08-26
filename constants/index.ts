@@ -177,16 +177,15 @@ export const NAV_LINKS = [
 
 		{
       id: '5',
-			title: "Room",
+			title: "Previous Portfolio",
 			description:
-				"Responsive landing page crafted using HTML, SCSS, and JS.",
-			linkText: "https://github.com/ibrahimtrahim/homepage",
+				"Responsive Web Developer Portfolio Crafted Using React.js and Tailwind CSS.",
+			linkText: "https://github.com/ibrahimtrahim/bra-portfolio",
 			img: "/project06.png",
-			link: "https://ibrahimtrahim.github.io/homepage/",
+			link: "https://bra-portfolio.vercel.app/",
 			languages: [
-                { name: "HTML", logo: "/html.png" },
-                { name: "SCSS", logo: "/sass.png" },
-				{ name: "JavaScript", logo: "/js.png" },
-            ]
+        { name: "REACT JS", logo: "/react.png" },
+        { name: "TAILWIND CSS", logo: "/tailwind.png" },
+      ]
 		},
 	];

@@ -14,7 +14,7 @@ const About = () => {
       initial={{opacity: 0}}
       whileInView={{opacity: 1}}
       transition={{duration: 1}}>
-        <p>
+        <p className='dark:text-gray-400'>
           After a career as a{" "}
           <span className="font-medium">physics teacher</span>, I decided to switch 
           to front-end development. I enrolled in a bootcamp where I learned {" "}
