@@ -25,7 +25,7 @@ export const NAV_LINKS = [
       },
       {
         icon: '/linkedin.svg',
-        url: 'https://www.linkedin.com/in/yourprofile', // Replace with your LinkedIn URL
+        url: 'https://www.linkedin.com/in/brahim-trahim-15a4611a8/', // Replace with your LinkedIn URL
       },
     ],
   };
